@@ -1,0 +1,77 @@
+h1 {
+  color: rgb(95, 136, 20);
+  text-transform: uppercase;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center ;
+  border: 4px solid grey;
+  border-radius: 5px;
+  background-color: rgba(221, 216, 216, 0.829)
+}
+
+h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 4px solid grey;
+  border-radius: 5px;
+}
+
+h3 {
+  color: rgb(188, 29, 122);
+  text-transform: uppercase;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center ;
+  border: 4px dashed rgb(188,29,122);
+  border-radius: 5px;
+  background-color: white(221, 216, 216, 0.829)}
+
+a {
+  color: green;
+}
+
+div p {
+  color: rgb(66, 66, 64);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#monDiv p {
+  color: pink;
+}
+
+.maClasse p {
+  text-transform: uppercase;
+}
+.petite{
+  height : 5rem;
+}
+
+.question {
+  margin-bottom: 1rem;
+}
+
+input {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 2px solid grey;
+  border-radius: 5px;
+  width: 10cm;
+  
+}
+
+label {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+textarea{
+  
+  width: 12cm;
+  height: 4cm;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+Select {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 2px solid grey;
+  border-radius: 5px;
+}

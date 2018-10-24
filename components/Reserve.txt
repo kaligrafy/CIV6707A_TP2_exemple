@@ -1,0 +1,42 @@
+
+                
+      <div className="radio">
+      <label>
+        <input type="radio" value="option1" checked={this.state.selectedOption === 'option1'} />
+        Option 1
+      </label>
+    </div>
+    <div className="radio">
+      <label>
+        <input type="radio" value="option2" checked={this.state.selectedOption === 'option2'} />
+        Option 2
+      </label>
+    </div>
+    <div className="radio">
+      <label>
+        <input type="radio" value="option3" checked={this.state.selectedOption === 'option3'} />
+        Option 3
+      </label>
+    </div>
+
+
+    
+
+   
+   <label>
+              Is going:
+              <input
+                name="isGoing"
+                type="checkbox"
+                checked={this.state.isGoing}
+                onChange={this.handleInputChange} />
+            </label>
+            <br />
+            <label>
+              Number of guests:
+              <input
+                name="numberOfGuests"
+                type="number"
+                value={this.state.numberOfGuests}
+                onChange={this.handleInputChange} />
+            </label>

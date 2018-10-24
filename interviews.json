@@ -1,0 +1,11 @@
+{
+  "interviews": {
+    "bob@test.test": {
+      "age": 15,
+      "abonnementBixi": "oui"
+    },
+    "bobinette@test.test": {
+
+    }
+  }
+}
