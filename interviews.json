@@ -1,11 +1,12 @@
 {
-  "interviews": {
-    "bob@test.test": {
-      "age": 15,
-      "abonnementBixi": "oui"
-    },
-    "bobinette@test.test": {
-
-    }
+  "bobinette@test.test": {
+    "age": 34
+  },
+  "bob@test.test": {
+    "age": 23,
+    "geography": [
+      -73.49957809448335,
+      45.49518703233312
+    ]
   }
 }

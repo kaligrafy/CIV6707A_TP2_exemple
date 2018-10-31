@@ -27,12 +27,12 @@ class Formulaire extends React.Component {
   }
 
   componentDidMount() {
-    const url = 'http://localhost:3001/interviews';
+    const url = `http://localhost:3001/${this.state.email}`;
     fetch(url).then(function(reponse) {
       return reponse.json();
     }).then(function(jsonData){
-      const interviews = jsonData;
-      this.setState((state) => ({interview: interviews[state.email]}));
+      const interview = jsonData;
+      this.setState((state) => ({interview: interview}));
     }.bind(this)).catch(function(error) {
       console.log('erreur lors du téléchargement du fichier json du serveur', error);
     });
@@ -51,6 +51,20 @@ class Formulaire extends React.Component {
         interview: interview
       };
     }, function() {
+      const url = `http://localhost:3001/${this.state.email}`;
+      fetch(url, {
+        method: 'PUT',
+        headers: {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        body: JSON.stringify(this.state.interview)
+      }).then(function(reponse) {
+        return reponse.json();
+      }).then(function(jsonData){
+        console.log(jsonData);
+      }.bind(this)).catch(function(error) {
+        console.log("erreur lors de l'envoi du fichier json du serveur", error);
+      });
       // callback (fetch with method POST to send new interview content to json-server)
     });
 

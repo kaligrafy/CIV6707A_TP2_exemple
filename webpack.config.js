@@ -47,7 +47,6 @@ module.exports = {
     new webpack.DefinePlugin({
       MAPBOX_API_KEY: JSON.stringify(env.MAPBOX_API_KEY)
     })
-
   ],
   resolve: {
     extensions: ['*', '.js', '.jsx']
