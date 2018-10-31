@@ -11,6 +11,7 @@ import QuestionSatisfaction from './QuestionSatisfaction';
 import QuestionFreq from './QuestionFreq';
 import QuestionPermisConduire from './QuestionPermisConduire'
 import QuestionTypeTransport from './QuestionTypeTransport';
+import QuestionMap from './QuestionMap';
 
 
 class Formulaire extends React.Component {
@@ -35,6 +36,10 @@ class Formulaire extends React.Component {
     }.bind(this)).catch(function(error) {
       console.log('erreur lors du téléchargement du fichier json du serveur', error);
     });
+
+
+
+
   }
   
   handleQuestionChange(attribute, value)
@@ -45,8 +50,10 @@ class Formulaire extends React.Component {
       return {
         interview: interview
       };
+    }, function() {
+      // callback (fetch with method POST to send new interview content to json-server)
     });
-    
+
   }
   
   render()
@@ -59,7 +66,11 @@ class Formulaire extends React.Component {
             age                  = {this.state.interview.age}
             abonnementBixi       = {this.state.interview.abonnementBixi}
           />
-          
+          <QuestionMap
+            handleQuestionChange = {this.handleQuestionChange}
+            value                = {this.state.interview.geography}
+          />
+
       </form>
     );
   }
