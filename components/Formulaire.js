@@ -59,33 +59,9 @@ class Formulaire extends React.Component {
             age                  = {this.state.interview.age}
             abonnementBixi       = {this.state.interview.abonnementBixi}
           />
-        
+          
       </form>
     );
-    /*
-    <QuestionCourriel></QuestionCourriel>
-          <QuestionNom></QuestionNom>
-          <br/>
-          <QuestionCommentaire></QuestionCommentaire>
-          <br/>
-          <QuestionQuestions></QuestionQuestions>
-          <br/>
-          <QuestionSexe></QuestionSexe>
-          <br/>
-          <QuestionStatut></QuestionStatut>
-          <br/>
-          <QuestionBixi></QuestionBixi>
-          <br/>
-          <QuestionTypeTransport></QuestionTypeTransport>
-          <br/>
-          <QuestionTypeActivite></QuestionTypeActivite>
-          <br/>
-          <QuestionSatisfaction></QuestionSatisfaction>
-          <br/>
-          <QuestionFreq></QuestionFreq>
-          <br/>
-          <QuestionPermisConduire></QuestionPermisConduire>
-          */
   }
 
   }
